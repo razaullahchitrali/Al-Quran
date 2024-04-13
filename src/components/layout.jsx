@@ -58,7 +58,7 @@ const Layout = () => {
             <Col className="col-4 d-flex align-items-center">
               <h1>AL-Quran</h1>
             </Col>
-            <Col className="col-4 d-flex justify-content-evenly">
+            <Col className="col-4  d-flex justify-content-evenly">
               {/* <a href="#" style={{ color: "black", textDecoration: "none" }}>
               <h5>Home</h5>
             </a>
@@ -117,7 +117,7 @@ const Layout = () => {
               </div>
             ) : (
               quranData.map((item, index) => (
-                <Col className="col-4" key={item?.chapter_id}>
+                <Col className="col-4 " xs={6} md={4} key={item?.chapter_id}>
                   <Card
                     style={{
                       borderWidth: 1,

@@ -69,6 +69,7 @@ const Layout = () => {
               <a
                 href=" https://lnkd.in/djsn4tHv"
                 style={{ color: "gray", textDecoration: "none" }}
+                target="blank"
               >
                 <h5>About me</h5>
               </a>
@@ -121,7 +122,10 @@ const Layout = () => {
               </div>
             ) : (
               quranData.map((item, index) => (
-                <Col className="col-4 " xs={6} md={4} key={item?.chapter_id}>
+                <Col
+                  className="col-12 col-md-4 col-lg-4"
+                  key={item?.chapter_id}
+                >
                   <Card
                     style={{
                       borderWidth: 1,
@@ -155,7 +159,7 @@ const Layout = () => {
             )}
           </Row>
         </Container>
-        <div
+        <Card
           style={{
             backgroundColor: "#e4ebf5",
             color: "black",
@@ -173,7 +177,7 @@ const Layout = () => {
             @ 2024 WebsiteName: <b> "Al-Quran"</b>
           </p>
           <h3>Designed by "Raza ullah"❤️</h3>
-        </div>
+        </Card>
       </div>
     </>
   );

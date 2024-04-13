@@ -67,7 +67,7 @@ const Layout = () => {
               </a> */}
 
               <a
-                href=" https://lnkd.in/djsn4tHv"
+                href=" https://raz-portfolio.netlify.app"
                 style={{ color: "gray", textDecoration: "none" }}
                 target="blank"
               >

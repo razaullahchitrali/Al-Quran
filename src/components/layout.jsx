@@ -9,7 +9,7 @@ import {
   CardHeader,
   ProgressCircular,
 } from "ui-neumorphism";
-import { Col, Container, Row } from "react-bootstrap";
+import { CardFooter, Col, Container, Row } from "react-bootstrap";
 
 const BASE_URL = "https://api.quran.com/api/v4";
 
@@ -52,22 +52,26 @@ const Layout = () => {
         {/* <Container> */}
         <Card
           className="d-flex align-items-center justify-content-center"
-          style={{ borderRadius: 0, paddingTop: 8, paddingBottom: 9 }}
+          style={{ borderRadius: 0, paddingTop: 8 }}
         >
-          <Container style={{ display: "flex" }}>
+          <Container style={{ display: "flex", alignItems: "center" }}>
             <Col className="col-4 d-flex align-items-center">
               <h1>AL-Quran</h1>
             </Col>
             <Col className="col-4  d-flex justify-content-evenly">
               {/* <a href="#" style={{ color: "black", textDecoration: "none" }}>
-              <h5>Home</h5>
-            </a>
-            <a href="#" style={{ color: "black", textDecoration: "none" }}>
-              <h5>Page</h5>
-            </a>
-            <a href="#" style={{ color: "black", textDecoration: "none" }}>
-              <h5>About</h5>
-            </a> */}
+                <h5>Home</h5>
+              </a>
+              <a href="#" style={{ color: "black", textDecoration: "none" }}>
+                <h5>Page</h5>
+              </a> */}
+
+              <a
+                href=" https://lnkd.in/djsn4tHv"
+                style={{ color: "gray", textDecoration: "none" }}
+              >
+                <h5>About me</h5>
+              </a>
             </Col>
             <Col className="col-4  d-flex align-items-center justify-content-end">
               <h2>جامعہ بنوری ٹاؤن کراچی</h2>
@@ -77,7 +81,7 @@ const Layout = () => {
         {/* </Container> */}
       </div>
       {/* Show Recitors */}
-      <div style={{ paddingTop: "100px", paddingBottom: 50 }}>
+      <div style={{ paddingTop: "100px" }}>
         <Container>
           <div style={{ marginTop: 10, paddingBottom: 10 }}>
             <div class="mb-3">
@@ -151,6 +155,25 @@ const Layout = () => {
             )}
           </Row>
         </Container>
+        <div
+          style={{
+            backgroundColor: "#e4ebf5",
+            color: "black",
+            padding: "20px",
+            textAlign: "center",
+            marginTop: "20px",
+            alignItems: "center",
+
+            left: 0,
+            bottom: 0,
+            width: "100%",
+          }}
+        >
+          <p>
+            @ 2024 WebsiteName: <b> "Al-Quran"</b>
+          </p>
+          <h3>Designed by "Raza ullah"❤️</h3>
+        </div>
       </div>
     </>
   );
